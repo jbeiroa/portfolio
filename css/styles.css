@@ -279,13 +279,16 @@ section li::before {
 }
 
 .skill-category ul li {
+  position: relative;
   font-size: 0.9rem;
-  padding: 3px 0;
+  padding: 3px 0 3px 28px;
 }
 
 .skill-category ul li::before {
   content: '├── ';
   color: var(--gray);
+  position: absolute;
+  left: 0;
 }
 
 #experience .timeline {
