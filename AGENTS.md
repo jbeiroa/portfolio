@@ -6,37 +6,38 @@ Personal portfolio website showcasing professional background and projects. Neo-
 
 ### Tech Stack
 - HTML, CSS, Vanilla JavaScript (no frameworks)
-- Static site for GitHub Pages deployment
+- Static site deployed on GitHub Pages
 
 ### Structure
 ```
 ├── index.html           # Main landing page
-├── css/
-│   └── styles.css       # Neo-brutalist terminal styling
-├── js/
-│   └── main.js          # Typing animation, easter egg
-├── projects/            # Individual project pages
+├── css/styles.css      # Neo-brutalist terminal styling
+├── js/main.js        # Typing animation, easter egg, lightbox
+├── projects/         # Project detail pages
 │   ├── thereisnohr.html
 │   ├── teacher-salaries.html
 │   ├── desercionar.html
 │   ├── rappi-agent.html
 │   └── rappi-dashboard.html
-└── assets/              # (empty - add images here)
+└── assets/          # Images (profile, project screenshots)
 ```
 
 ### Commands
-- No build step required - open `index.html` directly
-- For GitHub Pages: push to `gh-pages` branch or configure in repo settings
+- No build step - open `index.html` directly or serve locally
+- Deploy: push to GitHub and enable Pages in repo settings
 
 ### Features
 - Terminal typing animation on hero
+- Profile picture (grayscale, color on hover)
 - Skills matrix in terminal style
 - ASCII timeline for experience
-- Hidden easter egg: click bottom-right corner 5x, type `help` for commands
+- Hidden easter egg: click `>` in bottom-right corner, type `help` for commands
+- Lightbox: click gallery images to enlarge
 - Responsive design (mobile-first)
+- Styled h3 and ul/li in Overview sections
 
 ### Key Sections
-1. Hero with animated terminal
+1. Hero with terminal + profile pic
 2. Bio (professional summary)
 3. Skills matrix (categorized)
 4. Experience timeline (11 positions)
@@ -58,7 +59,8 @@ Personal portfolio website showcasing professional background and projects. Neo-
 - Borders: 2px solid white, no rounded corners
 - Hover: translate + yellow shadow
 
-### Adding Content
-- Replace `[Screenshot X]` placeholders with real images (300px+ width)
-- Update social links in `index.html#social`
-- Modify experience in `index.html#experience` timeline
+### Customizing
+- Edit `index.html` for bio, experience, skills
+- Add images to `assets/`
+- Project pages: `projects/*.html`
+- Lightbox activates automatically on any `#gallery img`
