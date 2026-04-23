@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thereisnohr | Juan Ignacio Beiroa</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>$_</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">jibeiroa@portfolio:~$</a>
+        <ul>
+          <li><a href="../index.html#bio">bio</a></li>
+          <li><a href="../index.html#projects">projects</a></li>
+          <li><a href="../index.html#social">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="project-header" style="border-bottom: var(--border);">
+      <div class="container">
+        <div style="margin-bottom: 20px;">
+          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Back to projects</a>
+        </div>
+        <h1 style="font-size: 2rem; color: var(--yellow);">thereisnohr</h1>
+        <p style="color: var(--gray); margin-top: 10px;">Flexible, provider-agnostic Applicant Tracking System</p>
+        <div class="project-links" style="margin-top: 20px;">
+          <a href="https://github.com/jbeiroa/thereisnohr" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://huggingface.co/spaces/jbeiroa/thereisnohr" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <h2>Overview</h2>
+        <div class="bio-text">
+          <p>Back in late 2024, I was tasked with the hiring process for a Mathematics and Biology teacher at a school I worked at. I thought HR would be in charge of gathering and filtering resumes, but I was wrong. There was no HR department to handle this task.</p>
+          <br>
+          <p>And so <em>thereisnohr</em> was born, a small, flexible, provider-agnostic Applicant Tracking System (ATS). It provides a complete end-to-end pipeline for resume processing, from PDF ingestion to AI-driven candidate matching and interview preparation.</p>
+          <br>
+          <p>The system leverages multiple LLM providers (Ollama, OpenAI) to enable intelligent resume parsing, candidate scoring, and automated interview question generation. Built with a focus on modularity and extensibility.</p>
+          <br>
+          <h3>Key Features</h3>
+          <ul>
+            <li><strong>Multi-Source Ingestion:</strong> Add resumes via local folder batch processing or direct PDF uploads through the web UI.</li>
+            <li><strong>Intelligent Parsing:</strong> Extract markdown from PDFs with automated section detection and bilingual support (English/Spanish).</li>
+            <li><strong>Identity Resolution:</strong> Deterministic and LLM-backed candidate identification to prevent duplicates.</li>
+            <li><strong>Structured Signal Extraction:</strong> Derivation of skills, experience, and education from resumes and job descriptions using LLMs.</li>
+            <li><strong>Hybrid Retrieval & Ranking:</strong> A multi-stage funnel combining vector search (pgvector), deterministic skill matching, and LLM reranking.</li>
+            <li><strong>Evidence-Based Explanations:</strong> Transparent match rationales grounded in resume quotes with explicit gap and risk analysis.</li>
+            <li><strong>Automated Interview Preparation:</strong> Generation of tailored technical and behavioral questions based on candidate-job fit.</li>
+            <li><strong>Async API:</strong> A FastAPI backend with a database-backed task queue for long-running LLM and processing tasks.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <div class="stack-badges" style="gap: 10px;">
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Python</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">LiteLLM</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Ollama</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">OpenAI API</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">PostgreSQL (pgvector)</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Streamlit</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Metaflow</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+          <div style="border: var(--border); padding: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.9rem;">
+              <img src="../assets/thereisnohr1.png" alt="National salary overview" style="width: 100%; height: auto; display: block;">
+          </div>
+          <div style="border: var(--border); padding: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.9rem;">
+              <img src="../assets/thereisnohr2.png" alt="Candidate matching interface" style="width: 100%; height: auto; display: block;">
+          </div>
+          <div style="border: var(--border); padding: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.9rem;">
+              <img src="../assets/thereisnohr3.png" alt="Interview preparation view" style="width: 100%; height: auto; display: block;">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="../index.html">← Back to Portfolio</a> | <a href="https://github.com/jbeiroa/thereisnohr" target="_blank" rel="noopener">View on GitHub</a></p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

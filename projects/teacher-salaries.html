@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Salary Analytics | Juan Ignacio Beiroa</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>$_</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">jibeiroa@portfolio:~$</a>
+        <ul>
+          <li><a href="../index.html#bio">bio</a></li>
+          <li><a href="../index.html#projects">projects</a></li>
+          <li><a href="../index.html#social">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="project-header" style="border-bottom: var(--border);">
+      <div class="container">
+        <div style="margin-bottom: 20px;">
+          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Back to projects</a>
+        </div>
+        <h1 style="font-size: 2rem; color: var(--yellow);">Teacher Salary Analytics Dashboard</h1>
+        <p style="color: var(--gray); margin-top: 10px;">Interactive visualization of Argentina's teacher salary data</p>
+        <div class="project-links" style="margin-top: 20px;">
+          <a href="https://github.com/jbeiroa/teacher_salaries" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://efeafdoxriask45bxeidpcxbxu0zbpqr.lambda-url.us-east-2.on.aws/" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <h2>Overview</h2>
+        <div class="bio-text">
+          <p>An interactive web application built with Dash to visualize and analyze teacher salary data (category MG10) across Argentina's 24 jurisdictions.</p>
+          <br>
+          <p>Features dynamic inflation adjustment, enabling real-time comparison of purchasing power across provinces and time periods. Provincial benchmarking allows users to understand relative compensation and identify disparities.</p>
+          <br>
+          <p>This project demonstrates expertise in building data-driven applications that translate complex fiscal data into actionable insights—a skill honed during my time as a government policy advisor.</p>
+          <br>
+          <h3>Key Features</h3>
+          <ul>
+            <li><strong>Inflation Adjustment:</strong> Salaries are adjusted for inflation using the Consumer Price Index (CPI) from INDEC, allowing for accurate comparisons of real wages over time.</li>
+            <li><strong>Provincial Benchmarking:</strong> Users can compare salaries across all 24 jurisdictions, identifying trends and disparities in teacher compensation.</li>
+            <li><strong>Interactive Visualizations:</strong> The dashboard includes line charts for historical comparison against poverty lines and bar graphs for comparisons between jurisdictions.</li>
+            <li><strong>Advanced Analytics and ML:</strong> The application incorporates machine learning to cluster similar jurisdictions through KShape and IsolationForest for anomaly detection in salary trends.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <div class="stack-badges" style="gap: 10px;">
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Python</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Plotly Dash</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">scikit-learn</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">LangChain</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">LiteLLM</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">AWS Lambda</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">AWS ECR</span>
+          <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">MLflow</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+          <div style="border: var(--border); padding: 10px;">
+            <img src="../assets/salary_dashboard_1.png" alt="National salary overview" style="width: 100%; height: auto; display: block;">
+          </div>
+          <div style="border: var(--border); padding: 10px;">
+            <img src="../assets/salary_dashboard_2.png" alt="Provincial comparison" style="width: 100%; height: auto; display: block;">
+          </div>
+          <div style="border: var(--border); padding: 10px;">
+            <img src="../assets/salary_dashboard_3.png" alt="Inflation-adjusted analysis" style="width: 100%; height: auto; display: block;">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="../index.html">← Back to Portfolio</a> | <a href="https://github.com/jbeiroa/teacher_salaries" target="_blank" rel="noopener">View on GitHub</a></p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
