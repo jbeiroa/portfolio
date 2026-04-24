@@ -10,12 +10,18 @@ const translations = {
     skills_title: 'skills.sh',
     skills: {
       programming: 'Programming',
-      ml_ai: 'ML / AI',
+      ml_ai: 'ML / IA',
       data: 'Data',
       cloud_mlops: 'Cloud / MLOps',
       web_apps: 'Web / Apps',
-      background: 'Background',
-      languages: 'Languages'
+      background: {
+        title: 'Background',
+        items: ['Physics Education', 'Public Policy', 'Strategic Planning']
+      },
+      languages: {
+        title: 'Languages',
+        items: ['Spanish (Native)', 'English (Fluent)', 'French (Basic)']
+      }
     },
     projects_title: 'projects/',
     projects: {
@@ -236,8 +242,8 @@ footer: 'Built with HTML, CSS & Vanilla JS | KISS + YAGNI',
     hero_tagline: 'Ingeniero de Machine Learning & IA',
     bio_title: 'sobre_mi.txt',
     bio_text: [
-      "Durante los últimos 10 años, dediqué la mayor parte de mi vida a la enseñanza STEM y a las políticas educativas. Tuve a mi cargo a más de 1000 estudiantes de entre 13 y 25 años, lideré equipos docentes en diseño curricular y me desempeñé como asesor gubernamental en mesas de negociación salarial docente.",
-      "Actualmente, estoy volcando toda esa experiencia en la construcción de pipelines de MLOps y aplicaciones potenciadas por LLMs. Desde el diseño de dashboards salariales y el despliegue de modelos predictivos hasta el desarrollo de agentes de IA, mi enfoque está en resolver problemas complejos y transformar datos crudos en inteligencia estratégica utilizando Python, scikit-learn, PyTorch y AWS.",
+      "Durante los últimos 10 años, he dedicado gran parte de mi vida a la enseñanza de STEM y a las políticas educativas. He enseñado a más de 1000 estudiantes de entre 13 y 25 años, liderado equipos docentes en el diseño curricular y trabajado como asesor gubernamental en negociaciones salariales docentes.",
+      "Actualmente, estoy aplicando toda esa experiencia en la creación de pipelines de MLOps y aplicaciones basadas en LLMs. Desde el diseño de dashboards salariales y el despliegue de modelos predictivos hasta el desarrollo de sistemas de agentes, disfruto resolviendo problemas complejos y transformando datos brutos en inteligencia estratégica con Python, scikit-learn, PyTorch y AWS.",
       "Soy un firme creyente en los principios KISS y YAGNI: mi objetivo es construir soluciones de IA que sean robustas, impactantes y libres de complejidad innecesaria."
     ],
     skills_title: 'habilidades.sh',
@@ -247,16 +253,22 @@ footer: 'Built with HTML, CSS & Vanilla JS | KISS + YAGNI',
       data: 'Datos',
       cloud_mlops: 'Cloud / MLOps',
       web_apps: 'Web / Apps',
-      background: 'Formación',
-      languages: 'Idiomas'
+      background: {
+        title: 'Formación',
+        items: ['Educación en Física', 'Políticas Públicas', 'Planificación Estratégica']
+      },
+      languages: {
+        title: 'Idiomas',
+        items: ['Español (Nativo)', 'Inglés (Fluido)', 'Francés (Básico)']
+      }
     },
     projects_title: 'proyectos/',
     projects: {
-      thereisnohr: { title: 'thereisnohr', desc: 'Sistema de Seguimiento de Candidatos flexible y agnóstico de proveedor con rankeo de candidatos impulsado por RAG y preparación de entrevistas con LLMs.' },
-      teacher_salaries: { title: 'Panel de Análisis de Salarios Docentes', desc: 'Aplicación web interactiva para visualizar y analizar datos de salarios docentes en Argentina con ajuste por inflación y comparación provincial.' },
-      desercionar: { title: 'desercionAR', desc: 'Sistema de Alerta Temprana para identificar estudiantes en riesgo de abandono escolar en Argentina usando datos de la Encuesta Permanente de Hogares.' },
-      rappi_agent: { title: 'Agente de Operaciones Inteligente de Rappi', desc: 'Sistema multiagente de IA para democratizar el acceso a datos operativos en Rappi, permitiendo consultas en lenguaje natural y informes estratégicos.' },
-      rappi_dashboard: { title: 'Panel de Inteligencia Competitiva de Rappi', desc: 'Sistema de inteligencia competitiva con scrapers especializados para Rappi, Uber Eats y Chedraui, más panel de visualización.' }
+      thereisnohr: { title: 'thereisnohr', desc: 'Sistema de Seguimiento de Candidatos (ATS) flexible e independiente del proveedor, con emparejamiento de candidatos impulsado por IA y preparación de entrevistas.' },
+      teacher_salaries: { title: 'Panel de Análisis de Salarios Docentes', desc: 'Aplicación web interactiva para visualizar y analizar datos de salarios docentes en Argentina con ajuste por inflación y benchmarking provincial.' },
+      desercionar: { title: 'desercionAR', desc: 'Sistema de Alerta Temprana para identificar estudiantes en riesgo de abandono escolar en Argentina utilizando datos de la Encuesta Permanente de Hogares (EPH).' },
+      rappi_agent: { title: 'Agente de Operaciones Inteligente de Rappi', desc: 'Sistema multiagente de IA para democratizar el acceso a datos operativos en Rappi, permitiendo consultas en lenguaje natural y reportes estratégicos.' },
+      rappi_dashboard: { title: 'Panel de Inteligencia Competitiva de Rappi', desc: 'Sistema de inteligencia competitiva con scrapers especializados para Rappi, Uber Eats y Chedraui, además de un panel de visualización.' }
     },
     project_links: { github: 'GitHub', demo: 'Demo', live: 'En vivo', details: 'Detalles' },
     experience_title: 'experiencia.log',
@@ -265,115 +277,115 @@ footer: 'Built with HTML, CSS & Vanilla JS | KISS + YAGNI',
         date: 'Ago 2020 - Presente',
         title: 'Profesor Asistente',
         org: 'Universidad de Buenos Aires',
-        desc: 'Curso de Física para estudiantes de Medicina/Veterinaria en el programa de aprendizaje a distancia UBA XXI.',
-        highlights: ['Gestiono consultas de estudiantes via campus virtual Moodle', 'Diseño y corrijo examenes alineados con objetivos pedagogicos', 'Desarrollo recursos educativos: materiales, herramientas interactivas, videos instructivos']
+        desc: 'Curso de Física para estudiantes de Medicina y Veterinaria en el programa UBA XXI.',
+        highlights: ['Gestión de consultas de estudiantes vía campus virtual Moodle', 'Diseño y corrección de exámenes alineados con objetivos pedagógicos', 'Desarrollo de recursos educativos: materiales, herramientas interactivas y videos instructivos']
       },
       {
         date: 'Feb 2020 - Dic 2025',
         title: 'Jefe de Ciencias y TI | Profesor de Física y Computación',
         org: 'Colegio Bayard',
-        desc: 'Dirigí el departamento STEM en una escuela bilingüe, supervisando estrategia académica y transición al currículo de Computación.',
-        highlights: ['Liderazgo de equipo: Gestioné 6 profesores', 'Ingeniería curricular: Renovación completa al estándar IGCSE', 'Enseñanza: Física, TIC y Computación en inglés']
+        desc: 'Dirección del departamento STEM en una escuela bilingüe, supervisando la estrategia académica y la transición al currículo moderno de Computación.',
+        highlights: ['Liderazgo de equipo: gestión de 6 profesores de diversas áreas científicas', 'Ingeniería curricular: renovación completa al estándar IGCSE de Cambridge', 'Enseñanza: Física y Computación dictadas íntegramente en inglés']
       },
       {
         date: 'Jun 2022 - Ene 2024',
         title: 'Asesor de Política Educativa | Analista de Datos Fiscales',
         org: 'Ministerio de Educación de la Nación',
-        desc: 'Secretaría General del Consejo Federal de Educación. Marco técnico para negociaciones salariales docentes.',
-        highlights: ['Modelado fiscal: Modelos de simulación para aumentos salariales', 'Pipeline de datos: Datos de 24 jurisdicciones', 'Logro clave: Marco que ayudó a aumentar un 27% en el salario mínimo docente']
+        desc: 'Secretaría General del Consejo Federal de Educación. Marco técnico para negociaciones salariales docentes nacionales.',
+        highlights: ['Modelado fiscal: creación de modelos de simulación para escenarios de aumento salarial', 'Pipeline de datos: recolección y normalización de datos de las 24 jurisdicciones argentinas', 'Logro clave: marco de datos que sustentó un aumento del 27% en el salario mínimo docente']
       },
       {
         date: 'Feb 2022 - Jun 2022',
         title: 'Formador de Maestros en Ciencias Naturales',
         org: 'Escuela de Maestros',
-        desc: 'Programa de formación docente para mejorar ciencias en primarias de Buenos Aires.',
-        highlights: ['Desarrollé y dicté sesiones de capacitación', 'Visitas escolares para apoyo instructivo directo']
+        desc: 'Programa de formación docente para mejorar la enseñanza de las ciencias en escuelas primarias de CABA.',
+        highlights: ['Desarrollo y dictado de sesiones de capacitación para docentes', 'Visitas escolares para brindar apoyo pedagógico directo']
       },
       {
         date: 'Ago 2019 - Abr 2022',
         title: 'Coordinador Académico y Secretario | Profesor',
         org: 'Bachillerato Popular de Jóvenes y Adultos IMPA',
-        desc: 'Organización educativa autogestionada con gobernanza horizontal.',
-        highlights: ['Gestión de documentación y cumplimiento', 'Co-liderazgo como parte del equipo de coordinación', 'Enseñanza: Física y Matemáticas']
+        desc: 'Organización educativa autogestionada con gobernanza horizontal y toma de decisiones por consenso.',
+        highlights: ['Gestión institucional: Secretaría académica, documentación y cumplimiento normativo', 'Liderazgo colaborativo: integrante del equipo de coordinación de la escuela', 'Enseñanza: Física y Matemáticas para jóvenes y adultos']
       },
       {
         date: 'Ago 2018 - Dic 2019',
         title: 'Profesor de Física y Asistente de Laboratorio',
         org: 'Escuela Técnica ORT',
-        desc: 'Equipo técnico-pedagógico del Departamento de Física.',
-        highlights: ['Diseño de experiments de laboratorio', 'Co-autoría de secuencia didáctica sobre sensores GPS']
+        desc: 'Equipo técnico-pedagógico del Departamento de Física de la principal escuela técnica de Argentina.',
+        highlights: ['Diseño y estandarización de experimentos de laboratorio y secuencias didácticas', 'Co-autoría de material didáctico sobre sensores GPS para experimentos de cinemática']
       },
       {
         date: 'Mar 2017 - Jul 2018',
         title: 'Profesor de Sistemas Tecnológicos',
         org: 'Colegio Agustiniano',
-        desc: 'Enseñanza de Sistemas Tecnológicos para 7° y 8° grado.',
-        highlights: ['Introduje conceptos físicos y análisis de sistemas']
+        desc: 'Enseñanza de Sistemas Tecnológicos para alumnos de 7° y 8° grado.',
+        highlights: ['Introducción a conceptos físicos fundamentales y análisis de sistemas físicos']
       },
       {
         date: 'Mar 2016 - Jul 2018',
-        title: 'Profesor de Matemáticas e TI',
+        title: 'Profesor de Matemáticas e IT',
         org: "St. Patrick's School",
-        desc: 'Docente en entorno bilingüe.'
+        desc: 'Docente en entorno bilingüe, integrando lógica matemática con herramientas tecnológicas aplicadas.'
       },
       {
         date: 'Mar 2016 - Ago 2017',
         title: 'Auxiliar de Docencia',
         org: 'Facultad de Ciencias Exactas y Naturales, UBA',
-        desc: 'Posición por examen de competencia en el Departamento de Física.',
-        highlights: ['Facilito sesiones de laboratorio y resolución de problemas', 'Altas evaluaciones por claridad']
+        desc: 'Posición obtenida por concurso en el Departamento de Física de la facultad de ciencias más prestigiosa del país.',
+        highlights: ['Coordinación de laboratorios y resolución de problemas para carreras de ciencias biológicas', 'Excelentes evaluaciones docentes por claridad en la explicación de fenómenos complejos']
       },
       {
         date: 'Oct 2009 - Mar 2016',
-        title: 'Técnico de Laboratorio de Investigación y Desarrollo',
+        title: 'Técnico de Laboratorio de I+D',
         org: 'CITEDEF',
-        desc: 'Grupo de investigación en aleaciones con memoria de forma.',
-        highlights: ['Ingeniería de instrumentación: Sistema DAQ personalizado', 'Testing de materiales: Ensayos de tracción', 'Co-autoría de dos artículos arbitrados']
+        desc: 'Grupo de investigación en aleaciones con memoria de forma (SMA), estudiando propiedades termomecánicas.',
+        highlights: ['Ingeniería de instrumentación: sistema DAQ personalizado para mediciones eléctricas', 'Ensayos de materiales: tracción mecánica, preparación cristalográfica y análisis microestructural', 'Co-autoría de dos artículos en revistas arbitradas sobre monocristales CuAlNi']
       },
       {
         date: 'Mar 2008 - Mar 2009',
-        title: 'Analista de Aseguramiento de Calidad',
+        title: 'Analista de QA',
         org: 'BGH S.A.',
-        desc: 'Testing de software QA para dispositivos móviles Motorola.',
-        highlights: ['Ejecuté protocolos de prueba']
+        desc: 'Pruebas de calidad de software para dispositivos móviles Motorola.',
+        highlights: ['Ejecución de protocolos de prueba de conectividad, multimedia y servicios de voz']
       }
     ],
-    social_title: 'conectar.sh',
+    social_title: 'contacto.sh',
     footer: 'Construido con HTML, CSS & Vanilla JS | KISS + YAGNI',
-    nav: { bio: 'sobre_mi', skills: 'habilidades', projects: 'proyectos', experience: 'experiencia', contact: 'contacto' },
+    nav: { bio: 'bio', skills: 'skills', projects: 'proyectos', experience: 'experiencia', contact: 'contacto' },
     projectPages: {
       thereisnohr: {
         menu: { bio: 'bio', projects: 'proyectos', contact: 'contacto' },
         backToProjects: '← Volver a proyectos',
         title: 'thereisnohr',
-        subtitle: 'Sistema de Seguimiento de Candidatos flexible y agnóstico de proveedor',
+        subtitle: 'Sistema de Seguimiento de Candidatos flexible e independiente del proveedor',
         links: { github: 'GitHub', demo: 'Demo' },
         overview: 'Resumen',
         keyFeatures: 'Características Clave',
         techStack: 'Tecnologías',
         gallery: 'Galería',
         overviewText: [
-          "A finales de 2024, me encargaron el proceso de contratación de un profesor de Matemáticas y Biología en una escuela donde trabajaba. Pensé que RR.HH. se encargaría de recopilar y filtrar currículums, pero estaba equivocado. No había un departamento de RR.HH. para manejar esta tarea.",
-          "Y así nació thereisnohr, un pequeño y flexible Sistema de Seguimiento de Candidatos (ATS) agnóstico de proveedor. Proporciona un pipeline completo para el procesamiento de currículums, desde la ingestión de PDF hasta el emparejamiento de candidatos impulsado por IA y la preparación de entrevistas.",
-          "El sistema aprovecha múltiples proveedores de LLM (Ollama, OpenAI) para permitir el análisis inteligente de currículums, puntuación de candidatos y generación automática de preguntas de entrevista. Construido con enfoque en modularidad y extensibilidad."
+          "A finales de 2024, me confiaron el proceso de selección de un docente de Matemáticas y Biología en una escuela donde trabajaba. Supuse que RR.HH. se encargaría de la recepción y filtrado de CVs, pero no fue así: no existía un departamento de RR.HH. para esa tarea.",
+          "Así nació thereisnohr, un pequeño y flexible Sistema de Seguimiento de Candidatos (ATS) independiente del proveedor. Proporciona un pipeline completo para el procesamiento de CVs, desde la ingesta de PDFs hasta el emparejamiento con IA y la preparación de entrevistas.",
+          "El sistema utiliza múltiples proveedores de LLM (Ollama, OpenAI) para permitir el parseo inteligente de CVs, puntuación de candidatos y generación automática de preguntas. Construido con un enfoque en la modularidad y extensibilidad."
         ],
         features: [
-          { title: 'Ingestión Multi-Fuente', desc: 'Agregar currículums vía procesamiento por lotes de carpeta local o cargas directas de PDF a través de la interfaz web.' },
-          { title: 'Análisis Inteligente', desc: 'Extraer markdown de PDFs con detección automática de secciones y soporte bilingüe (inglés/español).' },
-          { title: 'Resolución de Identidad', desc: 'Identificación determinista y basada en LLM para prevenir duplicados.' },
-          { title: 'Extracción de Señales Estructuradas', desc: 'Derivar habilidades, experiencia y educación de currículums y descripciones de puesto usando LLMs.' },
-          { title: 'Recuperación Híbrida y Ranking', desc: 'Un embudo multi-etapa que combina búsqueda vectorial (pgvector), emparejamiento determinista de habilidades y rerankeado por LLM.' },
-          { title: 'Explicaciones Basadas en Evidencia', desc: 'Rationales de emparejamiento transparentes fundamentados en citas del currículum con análisis de brechas y riesgos explícitos.' },
-          { title: 'Preparación Automatizada de Entrevistas', desc: 'Generación de preguntas técnicas y behavioral adaptadas basadas en la compatibilidad candidato-puesto.' },
-          { title: 'API Asíncrona', desc: 'Un backend FastAPI con una cola de tareas con base de datos para tareas largas de LLM y procesamiento.' }
+          { title: 'Ingesta Multi-Fuente', desc: 'Agregado de CVs mediante procesamiento por lotes de carpetas locales o cargas directas de PDF vía web.' },
+          { title: 'Parseo Inteligente', desc: 'Extracción de Markdown desde PDFs con detección automática de secciones y soporte bilingüe (inglés/español).' },
+          { title: 'Resolución de Identidad', desc: 'Identificación de candidatos mediante métodos deterministas y apoyados en LLM para prevenir duplicados.' },
+          { title: 'Extracción de Señales Estructuradas', desc: 'Derivación de habilidades, experiencia y educación a partir de CVs y descripciones de puestos usando LLMs.' },
+          { title: 'Recuperación Híbrida y Ranking', desc: 'Embudo de múltiples etapas que combina búsqueda vectorial (pgvector), coincidencia determinista y re-ranking con LLM.' },
+          { title: 'Explicaciones Basadas en Evidencia', desc: 'Justificaciones de emparejamiento transparentes basadas en citas del CV, con análisis explícito de brechas y riesgos.' },
+          { title: 'Preparación Automatizada de Entrevistas', desc: 'Generación de preguntas técnicas y conductuales adaptadas a la compatibilidad entre el candidato y el puesto.' },
+          { title: 'API Asíncrona', desc: 'Backend en FastAPI con cola de tareas respaldada por base de datos para procesos largos de procesamiento y LLM.' }
         ],
         footer: { back: '← Volver al Portafolio', github: 'Ver en GitHub' }
       },
-teacher_salaries: {
+      teacher_salaries: {
         menu: { bio: 'bio', projects: 'proyectos', contact: 'contacto' },
         backToProjects: '← Volver a proyectos',
         title: 'Panel de Análisis de Salarios Docentes',
-        subtitle: 'Visualización interactiva de datos de salarios docentes en Argentina',
+        subtitle: 'Visualización interactiva de datos salariales docentes en Argentina',
         links: { github: 'GitHub', demo: 'Demo' },
         overview: 'Resumen',
         keyFeatures: 'Características Clave',
@@ -381,14 +393,14 @@ teacher_salaries: {
         gallery: 'Galería',
         overviewText: [
           "Una aplicación web interactiva construida con Dash para visualizar y analizar datos de salarios docentes (categoría MG10) en las 24 jurisdicciones de Argentina.",
-          "Cuenta con ajuste dinámico por inflación, permitiendo comparación en tiempo real del poder adquisitivo entre provincias y períodos. El benchmark provincial permite a los usuarios entender la compensación relativa e identificar disparidades.",
-          "Este proyecto demuestra experiencia en la construcción de aplicaciones basadas en datos que traducen complejos datos fiscales en accionables—una habilidad pulida durante mi tiempo como asesor de políticas gubernamentales."
+          "Cuenta con ajuste dinámico por inflación, permitiendo la comparación en tiempo real del poder adquisitivo entre provincias y períodos. El benchmarking provincial permite entender la compensación relativa e identificar disparidades.",
+          "Este proyecto demuestra experiencia en la creación de aplicaciones de datos que traducen información fiscal compleja en insights accionables—una habilidad perfeccionada durante mi etapa como asesor de políticas públicas."
         ],
         features: [
-          { title: 'Ajuste por Inflación', desc: 'Los salarios se ajustan por inflación usando el Índice de Precios al Consumidor (IPC) del INDEC, permitiendo comparaciones precisas de salarios reales en el tiempo.' },
-          { title: 'Benchmark Provincial', desc: 'Los usuarios pueden comparar salarios en las 24 jurisdicciones, identificando tendencias y disparidades en la compensación docente.' },
-          { title: 'Visualizaciones Interactivas', desc: 'El panel incluye gráficos de línea para comparación histórica contra líneas de pobreza y gráficos de barra para comparaciones entre jurisdicciones.' },
-          { title: 'Analítica Avanzada y ML', desc: 'La aplicación incorpora aprendizaje automático para agrupar jurisdicciones similares a través de KShape e IsolationForest para detección de anomalías en tendencias salariales.' }
+          { title: 'Ajuste por Inflación', desc: 'Los salarios se ajustan mediante el Índice de Precios al Consumidor (IPC) del INDEC, permitiendo comparaciones precisas de salarios reales en el tiempo.' },
+          { title: 'Benchmarking Provincial', desc: 'Comparación de salarios entre las 24 jurisdicciones, identificando tendencias y brechas en la compensación docente.' },
+          { title: 'Visualizaciones Interactivas', desc: 'Incluye gráficos de líneas para comparación histórica frente a líneas de pobreza y gráficos de barras para comparar jurisdicciones.' },
+          { title: 'Analítica Avanzada y ML', desc: 'Incorpora Machine Learning para agrupar jurisdicciones similares mediante KShape y detección de anomalías con IsolationForest.' }
         ],
         footer: { back: '← Volver al Portafolio', github: 'Ver en GitHub' }
       },
@@ -396,14 +408,14 @@ teacher_salaries: {
         menu: { bio: 'bio', projects: 'proyectos', contact: 'contacto' },
         backToProjects: '← Volver a proyectos',
         title: 'desercionAR',
-        subtitle: 'Sistema de Alerta Temprana para prédicción de abandono escolar',
+        subtitle: 'Sistema de Alerta Temprana para la predicción de abandono escolar',
         links: { github: 'GitHub' },
         overview: 'Resumen',
         techStack: 'Tecnologías',
         overviewText: [
-          "Este proyecto desarrolla un Sistema de Alerta Temprana (SAT) para identificar estudiantes en riesgo de abandono escolar en Argentina, usando datos de la Encuesta Permanente de Hogares (EPH).",
-          "El sistema combina indicadores socioeconómicos con modelos de aprendizaje automático para prédcir el riesgo de abandono, permitiendo intervención proactiva por educadores y formuladores de políticas. Construido con enfoque en interpretabilidad—entender por qué un estudiante está en riesgo es tan importante como prédcir el riesgo en sí.",
-          "Desplegado en AWS EC2, este proyecto representa la intersección de mi formación educativa y habilidades técnicas de ML, demostrando cómo los enfoques basados en datos pueden apoyar objetivos de políticas educativas."
+          "Este proyecto desarrolla un Sistema de Alerta Temprana (SAT) para identificar estudiantes en riesgo de abandono escolar en Argentina, utilizando datos de la Encuesta Permanente de Hogares (EPH).",
+          "El sistema combina indicadores socioeconómicos con modelos de Machine Learning para predecir el riesgo de deserción, permitiendo intervenciones proactivas de educadores y decisores políticos. Se prioriza la interpretabilidad: entender por qué un estudiante está en riesgo.",
+          "Desplegado en AWS EC2, este proyecto representa la intersección entre mi formación educativa y mis habilidades técnicas en ML, demostrando cómo los datos pueden apoyar los objetivos de las políticas públicas."
         ],
         features: [],
         footer: { back: '← Volver al Portafolio', github: 'Ver en GitHub' }
@@ -412,24 +424,24 @@ teacher_salaries: {
         menu: { bio: 'bio', projects: 'proyectos', contact: 'contacto' },
         backToProjects: '← Volver a proyectos',
         title: 'Agente de Operaciones Inteligente de Rappi',
-        subtitle: 'Sistema multiagente de IA para acceso a datos operativos',
+        subtitle: 'Sistema multi-agente de IA para el acceso a datos operativos',
         links: { github: 'GitHub' },
         overview: 'Resumen',
         keyFeatures: 'Características Clave',
         techStack: 'Tecnologías',
         gallery: 'Galería',
         overviewText: [
-          "Un sistema multiagente de IA diseñado para democratizar el acceso a datos operativos en Rappi como parte de un proceso de entrevista técnica. El sistema permite a los equipos de Estrategia, Planificación y Analítica (SP&A) obtener profundas introspecciones, visualizaciones interactivas e informes estratégicos usando lenguaje natural.",
-          "Construido usando Google ADK con Gemini 3 Flash como modelo subyacente, el sistema orquesta múltiples agentes especializados que colaboran para entender consultas, obtener datos, generar visualizaciones y producir informes accionables.",
-          "Este proyecto demuestra arquitectura de sistema multiagente lista para producción y la habilidad de bridgear sistemas de datos complejos con stakeholders no técnicos a través de interfaces intuitivas de lenguaje natural."
+          "Un sistema de IA multi-agente diseñado para democratizar el acceso a datos operativos en Rappi. Permite a los equipos de Estrategia, Planificación y Analítica (SP&A) obtener insights profundos, visualizaciones interactivas e informes estratégicos mediante lenguaje natural.",
+          "Desarrollado con Google ADK y Gemini 3 Flash, el sistema orquesta múltiples agentes especializados que colaboran para comprender consultas, extraer datos, generar visualizaciones y producir informes accionables.",
+          "Este proyecto demuestra una arquitectura de sistemas multi-agente lista para producción y la capacidad de conectar sistemas de datos complejos con stakeholders no técnicos mediante interfaces intuitivas."
         ],
         features: [
-          { title: 'Colaboración Multi-Agente', desc: 'Agentes especializados para comprensión de consultas, recuperación de datos, generación de visualización y redacción de informes que trabajan juntos para fulfill solicitudes de usuarios.' },
-          { title: 'Flujo de Trabajo Dirigido por Orquestador', desc: 'Un orquestador centralizado gestiona la interacción entre agentes, asegurando coordinación sin fisuras y ejecución eficiente de tareas complejas.' },
-          { title: 'Interfaz de Lenguaje Natural', desc: 'Procesamiento de lenguaje natural intuitivo para interacción sin costuras con el sistema.' },
-          { title: 'Acceso a Datos y Visualización', desc: 'Integración con fuentes de datos internas y habilidad de generar visualizaciones interactivas sobre la marcha.' },
-          { title: 'Informes Accionables', desc: 'Generación de informes estratégicos con introspecciones claras y recomendaciones basados en los datos y visualizaciones obtidos.' },
-          { title: 'Detección de Anomalías', desc: 'Pipeline de ML para detectar patrones inusuales en los datos y alertar a los stakeholders relevantes cuando las métricas se deterioran.' }
+          { title: 'Colaboración Multi-Agente', desc: 'Agentes especializados en comprensión de consultas, recuperación de datos, visualización y redacción que colaboran para cumplir con las solicitudes de los usuarios.' },
+          { title: 'Flujo dirigido por Orquestador', desc: 'Un orquestador centralizado gestiona la interacción entre agentes, asegurando una coordinación fluida y una ejecución eficiente de tareas complejas.' },
+          { title: 'Interfaz de Lenguaje Natural', desc: 'Procesamiento de lenguaje natural intuitivo para una interacción fluida con el sistema.' },
+          { title: 'Acceso a Datos y Visualización', desc: 'Integración con fuentes de datos internas y capacidad de generar visualizaciones interactivas sobre la marcha.' },
+          { title: 'Reportes Accionables', desc: 'Generación de informes estratégicos con insights claros y recomendaciones basadas en los datos y visualizaciones obtenidos.' },
+          { title: 'Detección de Anomalías', desc: 'Pipeline de ML para detectar patrones inusuales en los datos y alertar a los responsables cuando las métricas se deterioran.' }
         ],
         footer: { back: '← Volver al Portafolio', github: 'Ver en GitHub' }
       },
@@ -437,22 +449,22 @@ teacher_salaries: {
         menu: { bio: 'bio', projects: 'proyectos', contact: 'contacto' },
         backToProjects: '← Volver a proyectos',
         title: 'Panel de Inteligencia Competitiva de Rappi',
-        subtitle: 'Inteligencia competitiva automatizada para el mercado de delivery mexicano',
+        subtitle: 'Inteligencia competitiva automatizada para el mercado de delivery en México',
         links: { github: 'GitHub' },
         overview: 'Resumen',
         keyFeatures: 'Características Clave',
         techStack: 'Tecnologías',
         gallery: 'Galería',
         overviewText: [
-          "Un proyecto de evaluación técnica para Rappi enfocado en construir un sistema de inteligencia competitiva automatizado y resiliente para el mercado de delivery mexicano.",
-          "El sistema cuenta con scrapers web especializados para Rappi, Uber Eats y Chedraui, construidos con Playwright para manejar contenido dinámico y medidas anti-bot. Un panel de Plotly Dash visualiza métricas clave de rendimiento y posicionamiento competitivo.",
-          "Este proyecto demuestra experiencia en web scraping a escala, arquitectura de pipeline de datos y traducción de datos de mercado crudos en introspecciones competitivas estratégicas."
+          "Proyecto de evaluación técnica para Rappi enfocado en construir un sistema de inteligencia competitiva resiliente y automatizado para el mercado de delivery mexicano.",
+          "El sistema cuenta con scrapers especializados para Rappi, Uber Eats y Chedraui, desarrollados con Playwright para manejar contenido dinámico y medidas anti-bot. Un dashboard en Plotly Dash visualiza métricas clave de rendimiento.",
+          "Este proyecto demuestra experiencia en web scraping a escala, arquitectura de pipelines de datos y la transformación de datos de mercado en insights competitivos estratégicos."
         ],
         features: [
-          { title: 'Web Scraping Robusto', desc: 'Scrapers basados en Playwright para Rappi, Uber Eats y Chedraui con rotación de proxy y técnicas de evasión anti-bot.' },
-          { title: 'Pipeline de Datos Automatizado', desc: 'Scraping programado vía GitHub Actions con manejo de errores, validación de datos y almacenamiento en formato estructurado para análisis.' },
-          { title: 'Panel Interactivo', desc: 'Una aplicación Plotly Dash provee visualizaciones de participación de mercado, tendencias de precios, tiempos de entrega y reseñas de clientes.' },
-          { title: 'Introspecciones Estratégicas', desc: 'Análisis de posicionamiento competitivo, identificación de oportunidades de mercado y recomendaciones accionables basadas en los datos recogidos.' }
+          { title: 'Web Scraping Robusto', desc: 'Scrapers basados en Playwright para Rappi, Uber Eats y Chedraui con rotación de proxies y técnicas de evasión de anti-bots.' },
+          { title: 'Pipeline de Datos Automatizado', desc: 'Scraping programado vía GitHub Actions con manejo de errores, validación de datos y almacenamiento estructurado para su análisis.' },
+          { title: 'Dashboard Interactivo', desc: 'Aplicación en Plotly Dash que provee visualizaciones de cuota de mercado, tendencias de precios, tiempos de entrega y reseñas de clientes.' },
+          { title: 'Insights Estratégicos', desc: 'Análisis del posicionamiento competitivo, identificación de oportunidades de mercado y recomendaciones accionables basadas en los datos recopilados.' }
         ],
         footer: { back: '← Volver al Portafolio', github: 'Ver en GitHub' }
       }
@@ -461,7 +473,7 @@ teacher_salaries: {
       name: 'juan_ignacio_beiroa',
       role: 'Ing. ML/AI | MLOps & Cloud',
       background: 'Física | Educación | Políticas Públicas',
-      journey: '"De enseñar 1000+ estudiantes a construir soluciones ML & AI"',
+      journey: '"De enseñar a más de 1000 estudiantes a construir soluciones de ML e IA"',
       expertise: ['ML_pipelines/', 'LLM_applications/', 'data_analysis/', 'cloud_deployment/', 'politicas_educativas/']
     }
   }
@@ -514,14 +526,28 @@ function updateContent() {
   t.bio_text.forEach((text, i) => {
     if (bioParagraphs[i]) bioParagraphs[i].textContent = text;
   });
-  const skillCategories = document.querySelectorAll('.skill-category h3');
-  if (skillCategories[0]) skillCategories[0].textContent = t.skills.programming;
-  if (skillCategories[1]) skillCategories[1].textContent = t.skills.ml_ai;
-  if (skillCategories[2]) skillCategories[2].textContent = t.skills.data;
-  if (skillCategories[3]) skillCategories[3].textContent = t.skills.cloud_mlops;
-  if (skillCategories[4]) skillCategories[4].textContent = t.skills.web_apps;
-  if (skillCategories[5]) skillCategories[5].textContent = t.skills.background;
-  if (skillCategories[6]) skillCategories[6].textContent = t.skills.languages;
+  const skillCategories = document.querySelectorAll('.skill-category');
+  if (skillCategories[0]) skillCategories[0].querySelector('h3').textContent = t.skills.programming;
+  if (skillCategories[1]) skillCategories[1].querySelector('h3').textContent = t.skills.ml_ai;
+  if (skillCategories[2]) skillCategories[2].querySelector('h3').textContent = t.skills.data;
+  if (skillCategories[3]) skillCategories[3].querySelector('h3').textContent = t.skills.cloud_mlops;
+  if (skillCategories[4]) skillCategories[4].querySelector('h3').textContent = t.skills.web_apps;
+  
+  if (skillCategories[5]) {
+    skillCategories[5].querySelector('h3').textContent = t.skills.background.title;
+    const items = skillCategories[5].querySelectorAll('li');
+    t.skills.background.items.forEach((item, j) => {
+      if (items[j]) items[j].textContent = item;
+    });
+  }
+  
+  if (skillCategories[6]) {
+    skillCategories[6].querySelector('h3').textContent = t.skills.languages.title;
+    const items = skillCategories[6].querySelectorAll('li');
+    t.skills.languages.items.forEach((item, j) => {
+      if (items[j]) items[j].textContent = item;
+    });
+  }
   const projectCards = document.querySelectorAll('.project-card');
   const projectsData = ['thereisnohr', 'teacher_salaries', 'desercionar', 'rappi_agent', 'rappi_dashboard'];
   projectCards.forEach((card, i) => {
@@ -616,9 +642,11 @@ function initLanguageToggle() {
   const btn = document.getElementById('lang-btn');
   if (!btn) return;
   btn.textContent = currentLang.toUpperCase();
-  if (currentLang === 'es') {
-    updateContent();
-  }
+  
+  // Always update content to ensure the selected language is applied,
+  // especially on project pages that might have hardcoded text.
+  updateContent();
+
   if (document.querySelector('.terminal-body') && currentLang === 'es') {
     refreshTerminal();
   }

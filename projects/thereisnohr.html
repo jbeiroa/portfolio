@@ -30,7 +30,7 @@
           <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Volver a proyectos</a>
         </div>
         <h1 style="font-size: 2rem; color: var(--yellow);">thereisnohr</h1>
-        <p style="color: var(--gray); margin-top: 10px;">Sistema de Seguimiento de Candidatos flexible y agnóstico de proveedor</p>
+        <p style="color: var(--gray); margin-top: 10px;">Sistema de Seguimiento de Candidatos flexible e independiente del proveedor</p>
         <div class="project-links" style="margin-top: 20px;">
           <a href="https://github.com/jbeiroa/thereisnohr" target="_blank" rel="noopener">GitHub</a>
           <a href="https://huggingface.co/spaces/jbeiroa/thereisnohr" target="_blank" rel="noopener">Demo</a>
@@ -42,22 +42,22 @@
       <div class="container">
         <h2>Resumen</h2>
         <div class="bio-text">
-          <p>A finales de 2024, me encargaron el proceso de contratación de un profesor de Matemáticas y Biología en una escuela donde trabajaba. Pensé que RR.HH. se encargaría de recopilar y filtrar currículums, pero estaba equivocado. No había un departamento de RR.HH. para manejar esta tarea.</p>
+          <p>A finales de 2024, me confiaron el proceso de selección de un docente de Matemáticas y Biología en una escuela donde trabajaba. Supuse que RR.HH. se encargaría de la recepción y filtrado de CVs, pero no fue así: no existía un departamento de RR.HH. para esa tarea.</p>
           <br>
-          <p>Y así nació <em>thereisnohr</em>, un pequeño y flexible Sistema de Seguimiento de Candidatos (ATS) agnóstico de proveedor. Proporciona un pipeline completo para el procesamiento de currículums, desde la ingestión de PDF hasta el emparejamiento de candidatos impulsado por IA y la preparación de entrevistas.</p>
+          <p>Así nació <em>thereisnohr</em>, un pequeño y flexible Sistema de Seguimiento de Candidatos (ATS) independiente del proveedor. Proporciona un pipeline completo para el procesamiento de CVs, desde la ingesta de PDFs hasta el emparejamiento con IA y la preparación de entrevistas.</p>
           <br>
-          <p>El sistema aprovecha múltiples proveedores de LLM (Ollama, OpenAI) para permitir el análisis inteligente de currículums, puntuación de candidatos y generación automática de preguntas de entrevista. Construido con enfoque en modularidad y extensibilidad.</p>
+          <p>El sistema utiliza múltiples proveedores de LLM (Ollama, OpenAI) para permitir el parseo inteligente de CVs, puntuación de candidatos y generación automática de preguntas. Construido con un enfoque en la modularidad y extensibilidad.</p>
           <br>
           <h3>Características Clave</h3>
           <ul>
-            <li><strong>Ingestión Multi-Fuente:</strong> Agregar currículums vía procesamiento por lotes de carpeta local o cargas directas de PDF a través de la interfaz web.</li>
-            <li><strong>Análisis Inteligente:</strong> Extraer markdown de PDFs con detección automática de secciones y soporte bilingüe (inglés/español).</li>
-            <li><strong>Resolución de Identidad:</strong> Identificación determinista y basada en LLM para prevenir duplicados.</li>
-            <li><strong>Extracción de Señales Estructuradas:</strong> Derivar habilidades, experiencia y educación de currículums y descripciones de puesto usando LLMs.</li>
-            <li><strong>Recuperación Híbrida y Ranking:</strong> Un embudo multi-etapa que combina búsqueda vectorial (pgvector), emparejamiento determinista de habilidades y rerankeado por LLM.</li>
-            <li><strong>Explicaciones Basadas en Evidencia:</strong> Rationales de emparejamiento transparentes fundamentados en citas del currículum con análisis de brechas y riesgos explícitos.</li>
-            <li><strong>Preparación Automatizada de Entrevistas:</strong> Generación de preguntas técnicas y behavioral adaptadas basadas en la compatibilidad candidato-puesto.</li>
-            <li><strong>API Asíncrona:</strong> Un backend FastAPI con una cola de tareas con base de datos para tareas largas de LLM y procesamiento.</li>
+            <li><strong>Ingesta Multi-Fuente:</strong> Agregado de CVs mediante procesamiento por lotes de carpetas locales o cargas directas de PDF vía web.</li>
+            <li><strong>Parseo Inteligente:</strong> Extracción de Markdown desde PDFs con detección automática de secciones y soporte bilingüe (inglés/español).</li>
+            <li><strong>Resolución de Identidad:</strong> Identificación de candidatos mediante métodos deterministas y apoyados en LLM para prevenir duplicados.</li>
+            <li><strong>Extracción de Señales Estructuradas:</strong> Derivación de habilidades, experiencia y educación a partir de CVs y descripciones de puestos usando LLMs.</li>
+            <li><strong>Recuperación Híbrida y Ranking:</strong> Embudo de múltiples etapas que combina búsqueda vectorial (pgvector), coincidencia determinista y re-ranking con LLM.</li>
+            <li><strong>Explicaciones Basadas en Evidencia:</strong> Justificaciones de emparejamiento transparentes basadas en citas del CV, con análisis explícito de brechas y riesgos.</li>
+            <li><strong>Preparación Automatizada de Entrevistas:</strong> Generación de preguntas técnicas y conductuales adaptadas a la compatibilidad entre el candidato y el puesto.</li>
+            <li><strong>API Asíncrona:</strong> Backend en FastAPI con cola de tareas respaldada por base de datos para procesos largos de procesamiento y LLM.</li>
           </ul>
         </div>
       </div>
