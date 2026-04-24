@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>desercionAR | Juan Ignacio Beiroa</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>$_</text></svg>">
@@ -14,9 +13,12 @@
         <a href="../index.html" class="logo">jibeiroa@portfolio:~$</a>
         <ul>
           <li><a href="../index.html#bio">bio</a></li>
-          <li><a href="../index.html#projects">projects</a></li>
-          <li><a href="../index.html#social">contact</a></li>
+          <li><a href="../index.html#projects">proyectos</a></li>
+          <li><a href="../index.html#social">contacto</a></li>
         </ul>
+        <div class="lang-toggle">
+          <button id="lang-btn">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -25,10 +27,10 @@
     <section id="project-header" style="border-bottom: var(--border);">
       <div class="container">
         <div style="margin-bottom: 20px;">
-          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Back to projects</a>
+          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Volver a proyectos</a>
         </div>
         <h1 style="font-size: 2rem; color: var(--yellow);">desercionAR</h1>
-        <p style="color: var(--gray); margin-top: 10px;">Early Warning System for school dropout prediction</p>
+        <p style="color: var(--gray); margin-top: 10px;">Sistema de Alerta Temprana para prédicción de abandono escolar</p>
         <div class="project-links" style="margin-top: 20px;">
           <a href="https://github.com/jbeiroa/desercionAR" target="_blank" rel="noopener">GitHub</a>
         </div>
@@ -37,20 +39,20 @@
 
     <section id="overview">
       <div class="container">
-        <h2>Overview</h2>
+        <h2>Resumen</h2>
         <div class="bio-text">
-          <p>This project develops an Early Warning System (EWS) to identify at-risk students prone to school dropout in Argentina, using data from the Permanent Household Survey (EPH - Encuesta Permanente de Hogares).</p>
+          <p>Este proyecto desarrolla un Sistema de Alerta Temprana (SAT) para identificar estudiantes en riesgo de abandono escolar en Argentina, usando datos de la Encuesta Permanente de Hogares (EPH).</p>
           <br>
-          <p>The system combines socioeconomic indicators with machine learning models to predict dropout risk, enabling proactive intervention by educators and policymakers. Built with a focus on interpretability—understanding why a student is at risk is as important as predicting the risk itself.</p>
+          <p>El sistema combina indicadores socioeconómicos con modelos de aprendizaje automático para prédcir el riesgo de abandono, permitiendo intervención proactiva por educadores y formuladores de políticas. Construido con enfoque en interpretabilidad—entender por qué un estudiante está en riesgo es tan importante como prédcir el riesgo en sí.</p>
           <br>
-          <p>Deployed on AWS EC2, this project represents the intersection of my education background and technical ML skills, demonstrating how data-driven approaches can support educational policy goals.</p>
+          <p>Desplegado en AWS EC2, este proyecto representa la intersección de mi formación educativa y habilidades técnicas de ML, demostrando cómo los enfoques basados en datos pueden apoyar objetivos de políticas educativas.</p>
         </div>
       </div>
     </section>
 
     <section id="stack">
       <div class="container">
-        <h2>Tech Stack</h2>
+        <h2>Tecnologías</h2>
         <div class="stack-badges" style="gap: 10px;">
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Python</span>
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">scikit-learn</span>
@@ -64,9 +66,9 @@
       </div>
     </section>
 
-<!--     <section id="gallery">
+  <!--     <section id="gallery">
       <div class="container">
-        <h2>Gallery</h2>
+        <h2>Galería</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
           <div style="border: var(--border); padding: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.9rem;">
             [Screenshot 1: Risk dashboard]
@@ -84,7 +86,7 @@
 
   <footer>
     <div class="container">
-      <p><a href="../index.html">← Back to Portfolio</a> | <a href="https://github.com/jbeiroa/desercionAR" target="_blank" rel="noopener">View on GitHub</a></p>
+      <p><a href="../index.html">← Volver al Portafolio</a> | <a href="https://github.com/jbeiroa/desercionAR" target="_blank" rel="noopener">Ver en GitHub</a></p>
     </div>
   </footer>
 

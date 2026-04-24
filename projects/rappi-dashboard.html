@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rappi Dashboard | Juan Ignacio Beiroa</title>
+  <title>Panel Rappi | Juan Ignacio Beiroa</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>$_</text></svg>">
 </head>
@@ -14,9 +13,12 @@
         <a href="../index.html" class="logo">jibeiroa@portfolio:~$</a>
         <ul>
           <li><a href="../index.html#bio">bio</a></li>
-          <li><a href="../index.html#projects">projects</a></li>
-          <li><a href="../index.html#social">contact</a></li>
+          <li><a href="../index.html#projects">proyectos</a></li>
+          <li><a href="../index.html#social">contacto</a></li>
         </ul>
+        <div class="lang-toggle">
+          <button id="lang-btn">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -25,10 +27,10 @@
     <section id="project-header" style="border-bottom: var(--border);">
       <div class="container">
         <div style="margin-bottom: 20px;">
-          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Back to projects</a>
+          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Volver a proyectos</a>
         </div>
-        <h1 style="font-size: 2rem; color: var(--yellow);">Rappi Competitive Intelligence Dashboard</h1>
-        <p style="color: var(--gray); margin-top: 10px;">Automated competitive intelligence for the Mexican delivery market</p>
+        <h1 style="font-size: 2rem; color: var(--yellow);">Panel de Inteligencia Competitiva de Rappi</h1>
+        <p style="color: var(--gray); margin-top: 10px;">Inteligencia competitiva automatizada para el mercado de delivery mexicano</p>
         <div class="project-links" style="margin-top: 20px;">
           <a href="https://github.com/jbeiroa/rappi_dashboard" target="_blank" rel="noopener">GitHub</a>
         </div>
@@ -37,20 +39,20 @@
 
     <section id="overview">
       <div class="container">
-        <h2>Overview</h2>
+        <h2>Resumen</h2>
         <div class="bio-text">
-          <p>A technical evaluation project for Rappi focused on building a resilient, automated competitive intelligence system for the Mexican delivery market.</p>
+          <p>Un proyecto de evaluación técnica para Rappi enfocado en construir un sistema de inteligencia competitiva automatizado y resiliente para el mercado de delivery mexicano.</p>
           <br>
-          <p>The system features specialized web scrapers for Rappi, Uber Eats, and Chedraui, built with Playwright to handle dynamic content and anti-bot measures. A Plotly Dash dashboard visualizes key performance metrics and competitive positioning.</p>
+          <p>El sistema cuenta con scrapers web especializados para Rappi, Uber Eats y Chedraui, construidos con Playwright para manejar contenido dinámico y medidas anti-bot. Un panel de Plotly Dash visualiza métricas clave de rendimiento y posicionamiento competitivo.</p>
           <br>
-          <p>This project demonstrates expertise in web scraping at scale, data pipeline architecture, and translating raw market data into strategic competitive insights.</p>
+          <p>Este proyecto demuestra experiencia en web scraping a escala, arquitectura de pipeline de datos y traducción de datos de mercado crudos en introspecciones competitivas estratégicas.</p>
           <br>
-          <h3>Key Features</h3>
+          <h3>Características Clave</h3>
           <ul>
-            <li><strong>Robust Web Scraping:</strong> Playwright-based scrapers for Rappi, Uber Eats, and Chedraui with proxy rotation and anti-bot evasion techniques.</li>
-            <li><strong>Automated Data Pipeline:</strong> Scheduled scraping via GitHub Actions with error handling, data validation, and storage in a structured format for analysis.</li>
-            <li><strong>Interactive Dashboard:</strong> A Plotly Dash application providing visualizations of market share, pricing trends, delivery times, and customer reviews.</li>
-            <li><strong>Strategic Insights:</strong> Analysis of competitive positioning, identification of market opportunities, and actionable recommendations based on the collected data.</li>
+            <li><strong>Web Scraping Robusto:</strong> Scrapers basados en Playwright para Rappi, Uber Eats y Chedraui con rotación de proxy y técnicas de evasión anti-bot.</li>
+            <li><strong>Pipeline de Datos Automatizado:</strong> Scraping programado vía GitHub Actions con manejo de errores, validación de datos y almacenamiento en formato estructurado para análisis.</li>
+            <li><strong>Panel Interactivo:</strong> Una aplicación Plotly Dash provee visualizaciones de participación de mercado, tendencias de precios, tiempos de entrega y reseñas de clientes.</li>
+            <li><strong>Introspecciones Estratégicas:</strong> Análisis de posicionamiento competitivo, identificación de oportunidades de mercado y recomendaciones accionables basadas en los datos recogidos.</li>
           </ul>
         </div>
       </div>
@@ -58,7 +60,7 @@
 
     <section id="stack">
       <div class="container">
-        <h2>Tech Stack</h2>
+        <h2>Tecnologías</h2>
         <div class="stack-badges" style="gap: 10px;">
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Python</span>
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Plotly Dash</span>
@@ -69,7 +71,7 @@
 
     <section id="gallery">
       <div class="container">
-        <h2>Gallery</h2>
+        <h2>Galería</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
           <div style="border: var(--border); padding: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.9rem;">
               <img src="../assets/rappi_dashboard1.png" alt="National salary overview" style="width: 100%; height: auto; display: block;">
@@ -87,7 +89,7 @@
 
   <footer>
     <div class="container">
-      <p><a href="../index.html">← Back to Portfolio</a> | <a href="https://github.com/jbeiroa/rappi_dashboard" target="_blank" rel="noopener">View on GitHub</a></p>
+      <p><a href="../index.html">← Volver al Portafolio</a> | <a href="https://github.com/jbeiroa/rappi_dashboard" target="_blank" rel="noopener">Ver en GitHub</a></p>
     </div>
   </footer>
 

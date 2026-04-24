@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teacher Salary Analytics | Juan Ignacio Beiroa</title>
+  <title>Salarios Docentes | Juan Ignacio Beiroa</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>$_</text></svg>">
 </head>
@@ -14,9 +13,12 @@
         <a href="../index.html" class="logo">jibeiroa@portfolio:~$</a>
         <ul>
           <li><a href="../index.html#bio">bio</a></li>
-          <li><a href="../index.html#projects">projects</a></li>
-          <li><a href="../index.html#social">contact</a></li>
+          <li><a href="../index.html#projects">proyectos</a></li>
+          <li><a href="../index.html#social">contacto</a></li>
         </ul>
+        <div class="lang-toggle">
+          <button id="lang-btn">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -25,33 +27,33 @@
     <section id="project-header" style="border-bottom: var(--border);">
       <div class="container">
         <div style="margin-bottom: 20px;">
-          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Back to projects</a>
+          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Volver a proyectos</a>
         </div>
-        <h1 style="font-size: 2rem; color: var(--yellow);">Teacher Salary Analytics Dashboard</h1>
-        <p style="color: var(--gray); margin-top: 10px;">Interactive visualization of Argentina's teacher salary data</p>
+        <h1 style="font-size: 2rem; color: var(--yellow);">Panel de Análisis de Salarios Docentes</h1>
+        <p style="color: var(--gray); margin-top: 10px;">Visualización interactiva de datos de salarios docentes en Argentina</p>
         <div class="project-links" style="margin-top: 20px;">
           <a href="https://github.com/jbeiroa/teacher_salaries" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://efeafdoxriask45bxeidpcxbxu0zbpqr.lambda-url.us-east-2.on.aws/" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://efeafdoxriask45bxeidpcxbxu0zbpqr.lambda-url.us-east-2.on.aws/" target="_blank" rel="noopener">Demo</a>
         </div>
       </div>
     </section>
 
     <section id="overview">
       <div class="container">
-        <h2>Overview</h2>
+        <h2>Resumen</h2>
         <div class="bio-text">
-          <p>An interactive web application built with Dash to visualize and analyze teacher salary data (category MG10) across Argentina's 24 jurisdictions.</p>
+          <p>Una aplicación web interactiva construida con Dash para visualizar y analizar datos de salarios docentes (categoría MG10) en las 24 jurisdicciones de Argentina.</p>
           <br>
-          <p>Features dynamic inflation adjustment, enabling real-time comparison of purchasing power across provinces and time periods. Provincial benchmarking allows users to understand relative compensation and identify disparities.</p>
+          <p>Cuenta con ajuste dinámico por inflación, permitiendo comparación en tiempo real del poder adquisitivo entre provincias y períodos. El benchmark provincial permite a los usuarios entender la compensación relativa e identificar disparidades.</p>
           <br>
-          <p>This project demonstrates expertise in building data-driven applications that translate complex fiscal data into actionable insights—a skill honed during my time as a government policy advisor.</p>
+          <p>Este proyecto demuestra experiencia en la construcción de aplicaciones basadas en datos que traducen complejos datos fiscales en accionables—una habilidad pulida durante mi tiempo como asesor de políticas gubernamentales.</p>
           <br>
-          <h3>Key Features</h3>
+          <h3>Características Clave</h3>
           <ul>
-            <li><strong>Inflation Adjustment:</strong> Salaries are adjusted for inflation using the Consumer Price Index (CPI) from INDEC, allowing for accurate comparisons of real wages over time.</li>
-            <li><strong>Provincial Benchmarking:</strong> Users can compare salaries across all 24 jurisdictions, identifying trends and disparities in teacher compensation.</li>
-            <li><strong>Interactive Visualizations:</strong> The dashboard includes line charts for historical comparison against poverty lines and bar graphs for comparisons between jurisdictions.</li>
-            <li><strong>Advanced Analytics and ML:</strong> The application incorporates machine learning to cluster similar jurisdictions through KShape and IsolationForest for anomaly detection in salary trends.</li>
+            <li><strong>Ajuste por Inflación:</strong> Los salarios se ajustan por inflación usando el Índice de Precios al Consumidor (IPC) del INDEC, permitiendo comparaciones precisas de salarios reales en el tiempo.</li>
+            <li><strong>Benchmark Provincial:</strong> Los usuarios pueden comparar salarios en las 24 jurisdicciones, identificando tendencias y disparidades en la compensación docente.</li>
+            <li><strong>Visualizaciones Interactivas:</strong> El panel incluye gráficos de línea para comparación histórica contra líneas de pobreza y gráficos de barra para comparaciones entre jurisdicciones.</li>
+            <li><strong>Analítica Avanzada y ML:</strong> La aplicación incorpora aprendizaje automático para agrupar jurisdicciones similares a través de KShape e IsolationForest para detección de anomalías en tendencias salariales.</li>
           </ul>
         </div>
       </div>
@@ -59,7 +61,7 @@
 
     <section id="stack">
       <div class="container">
-        <h2>Tech Stack</h2>
+        <h2>Tecnologías</h2>
         <div class="stack-badges" style="gap: 10px;">
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Python</span>
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Plotly Dash</span>
@@ -75,7 +77,7 @@
 
     <section id="gallery">
       <div class="container">
-        <h2>Gallery</h2>
+        <h2>Galería</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
           <div style="border: var(--border); padding: 10px;">
             <img src="../assets/salary_dashboard_1.png" alt="National salary overview" style="width: 100%; height: auto; display: block;">
@@ -93,7 +95,7 @@
 
   <footer>
     <div class="container">
-      <p><a href="../index.html">← Back to Portfolio</a> | <a href="https://github.com/jbeiroa/teacher_salaries" target="_blank" rel="noopener">View on GitHub</a></p>
+      <p><a href="../index.html">← Volver al Portafolio</a> | <a href="https://github.com/jbeiroa/teacher_salaries" target="_blank" rel="noopener">Ver en GitHub</a></p>
     </div>
   </footer>
 

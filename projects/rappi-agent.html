@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rappi Agent | Juan Ignacio Beiroa</title>
+  <title>Agente Rappi | Juan Ignacio Beiroa</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>$_</text></svg>">
 </head>
@@ -14,9 +13,12 @@
         <a href="../index.html" class="logo">jibeiroa@portfolio:~$</a>
         <ul>
           <li><a href="../index.html#bio">bio</a></li>
-          <li><a href="../index.html#projects">projects</a></li>
-          <li><a href="../index.html#social">contact</a></li>
+          <li><a href="../index.html#projects">proyectos</a></li>
+          <li><a href="../index.html#social">contacto</a></li>
         </ul>
+        <div class="lang-toggle">
+          <button id="lang-btn">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -25,10 +27,10 @@
     <section id="project-header" style="border-bottom: var(--border);">
       <div class="container">
         <div style="margin-bottom: 20px;">
-          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Back to projects</a>
+          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Volver a proyectos</a>
         </div>
-        <h1 style="font-size: 2rem; color: var(--yellow);">Rappi Intelligent Operations Agent</h1>
-        <p style="color: var(--gray); margin-top: 10px;">Multi-agent AI system for operational data access</p>
+        <h1 style="font-size: 2rem; color: var(--yellow);">Agente de Operaciones Inteligente de Rappi</h1>
+        <p style="color: var(--gray); margin-top: 10px;">Sistema multiagente de IA para acceso a datos operativos</p>
         <div class="project-links" style="margin-top: 20px;">
           <a href="https://github.com/jbeiroa/rappi_agent" target="_blank" rel="noopener">GitHub</a>
         </div>
@@ -37,22 +39,22 @@
 
     <section id="overview">
       <div class="container">
-        <h2>Overview</h2>
+        <h2>Resumen</h2>
         <div class="bio-text">
-          <p>A multi-agent AI system designed to democratize access to operational data at Rappi as part of a technical interview process. The system enables Strategy, Planning, and Analytics (SP&A) teams to obtain deep insights, interactive visualizations, and strategic reports using natural language.</p>
+          <p>Un sistema multiagente de IA diseñado para democratizar el acceso a datos operativos en Rappi como parte de un proceso de entrevista técnica. El sistema permite a los equipos de Estrategia, Planificación y Analítica (SP&A) obtener profundas introspecciones, visualizaciones interactivas e informes estratégicos usando lenguaje natural.</p>
           <br>
-          <p>Built using Google ADK with Gemini 3 Flash as the underlying model, the system orchestrates multiple specialized agents that collaborate to understand queries, fetch data, generate visualizations, and produce actionable reports.</p>
+          <p>Construido usando Google ADK con Gemini 3 Flash como modelo subyacente, el sistema orquesta múltiples agentes especializados que colaboran para entender consultas, obtener datos, generar visualizaciones y producir informes accionables.</p>
           <br>
-          <p>This project demonstrates production-ready multi-agent system architecture and the ability to bridge complex data systems with non-technical stakeholders through intuitive natural language interfaces.</p>
+          <p>Este proyecto demuestra arquitectura de sistema multiagente lista para producción y la habilidad de bridgear sistemas de datos complejos con stakeholders no técnicos a través de interfaces intuitivas de lenguaje natural.</p>
           <br>
-          <h3>Key Features</h3>
+          <h3>Características Clave</h3>
           <ul>
-            <li><strong>Multi-Agent Collaboration:</strong> Specialized agents for query understanding, data retrieval, visualization generation, and report writing that work together to fulfill user requests.</li>
-            <li><strong>Orchestrator-Driven Workflow:</strong> A centralized orchestrator manages the interaction between agents, ensuring seamless coordination and efficient execution of complex tasks.</li>
-            <li><strong>Natural Language Interface:</strong> Intuitive natural language processing for seamless interaction with the system.</li>
-            <li><strong>Data Access & Visualization:</strong> Integration with internal data sources and the ability to generate interactive visualizations on the fly.</li>
-            <li><strong>Actionable Reporting:</strong> Generation of strategic reports with clear insights and recommendations based on the retrieved data and visualizations.</li>
-            <li><strong>Anomaly Detection:</strong> ML pipeline to detect unusual patterns in the data and alert relevant stakeholders when metrics deteriorate.</li>
+            <li><strong>Colaboración Multi-Agente:</strong> Agentes especializados para comprensión de consultas, recuperación de datos, generación de visualización y redacción de informes que trabajan juntos para fulfill solicitudes de usuarios.</li>
+            <li><strong>Flujo de Trabajo Dirigido por Orquestador:</strong> Un orquestador centralizado gestiona la interacción entre agentes, asegurando coordinación sin fisuras y ejecución eficiente de tareas complejas.</li>
+            <li><strong>Interfaz de Lenguaje Natural:</strong> Procesamiento de lenguaje natural intuitivo para interacción sin costuras con el sistema.</li>
+            <li><strong>Acceso a Datos y Visualización:</strong> Integración con fuentes de datos internas y habilidad de generar visualizaciones interactivas sobre la marcha.</li>
+            <li><strong>Informes Accionables:</strong> Generación de informes estratégicos con introspecciones claras y recomendaciones basados en los datos y visualizaciones obtidos.</li>
+            <li><strong>Detección de Anomalías:</strong> Pipeline de ML para detectar patrones inusuales en los datos y alertar a los stakeholders relevantes cuando las métricas se deterioran.</li>
           </ul>
         </div>
       </div>
@@ -60,7 +62,7 @@
 
     <section id="stack">
       <div class="container">
-        <h2>Tech Stack</h2>
+        <h2>Tecnologías</h2>
         <div class="stack-badges" style="gap: 10px;">
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Python</span>
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">uv</span>
@@ -76,7 +78,7 @@
 
     <section id="gallery">
       <div class="container">
-        <h2>Gallery</h2>
+        <h2>Galería</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
           <div style="border: var(--border); padding: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.9rem;">
               <img src="../assets/rappi_agent1.png" alt="National salary overview" style="width: 100%; height: auto; display: block;">
@@ -94,7 +96,7 @@
 
   <footer>
     <div class="container">
-      <p><a href="../index.html">← Back to Portfolio</a> | <a href="https://github.com/jbeiroa/rappi_agent" target="_blank" rel="noopener">View on GitHub</a></p>
+      <p><a href="../index.html">← Volver al Portafolio</a> | <a href="https://github.com/jbeiroa/rappi_agent" target="_blank" rel="noopener">Ver en GitHub</a></p>
     </div>
   </footer>
 

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>thereisnohr | Juan Ignacio Beiroa</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>$_</text></svg>">
@@ -14,9 +13,12 @@
         <a href="../index.html" class="logo">jibeiroa@portfolio:~$</a>
         <ul>
           <li><a href="../index.html#bio">bio</a></li>
-          <li><a href="../index.html#projects">projects</a></li>
-          <li><a href="../index.html#social">contact</a></li>
+          <li><a href="../index.html#projects">proyectos</a></li>
+          <li><a href="../index.html#social">contacto</a></li>
         </ul>
+        <div class="lang-toggle">
+          <button id="lang-btn">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -25,37 +27,37 @@
     <section id="project-header" style="border-bottom: var(--border);">
       <div class="container">
         <div style="margin-bottom: 20px;">
-          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Back to projects</a>
+          <a href="../index.html#projects" style="color: var(--gray); font-size: 0.9rem;">← Volver a proyectos</a>
         </div>
         <h1 style="font-size: 2rem; color: var(--yellow);">thereisnohr</h1>
-        <p style="color: var(--gray); margin-top: 10px;">Flexible, provider-agnostic Applicant Tracking System</p>
+        <p style="color: var(--gray); margin-top: 10px;">Sistema de Seguimiento de Candidatos flexible y agnóstico de proveedor</p>
         <div class="project-links" style="margin-top: 20px;">
           <a href="https://github.com/jbeiroa/thereisnohr" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://huggingface.co/spaces/jbeiroa/thereisnohr" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://huggingface.co/spaces/jbeiroa/thereisnohr" target="_blank" rel="noopener">Demo</a>
         </div>
       </div>
     </section>
 
     <section id="overview">
       <div class="container">
-        <h2>Overview</h2>
+        <h2>Resumen</h2>
         <div class="bio-text">
-          <p>Back in late 2024, I was tasked with the hiring process for a Mathematics and Biology teacher at a school I worked at. I thought HR would be in charge of gathering and filtering resumes, but I was wrong. There was no HR department to handle this task.</p>
+          <p>A finales de 2024, me encargaron el proceso de contratación de un profesor de Matemáticas y Biología en una escuela donde trabajaba. Pensé que RR.HH. se encargaría de recopilar y filtrar currículums, pero estaba equivocado. No había un departamento de RR.HH. para manejar esta tarea.</p>
           <br>
-          <p>And so <em>thereisnohr</em> was born, a small, flexible, provider-agnostic Applicant Tracking System (ATS). It provides a complete end-to-end pipeline for resume processing, from PDF ingestion to AI-driven candidate matching and interview preparation.</p>
+          <p>Y así nació <em>thereisnohr</em>, un pequeño y flexible Sistema de Seguimiento de Candidatos (ATS) agnóstico de proveedor. Proporciona un pipeline completo para el procesamiento de currículums, desde la ingestión de PDF hasta el emparejamiento de candidatos impulsado por IA y la preparación de entrevistas.</p>
           <br>
-          <p>The system leverages multiple LLM providers (Ollama, OpenAI) to enable intelligent resume parsing, candidate scoring, and automated interview question generation. Built with a focus on modularity and extensibility.</p>
+          <p>El sistema aprovecha múltiples proveedores de LLM (Ollama, OpenAI) para permitir el análisis inteligente de currículums, puntuación de candidatos y generación automática de preguntas de entrevista. Construido con enfoque en modularidad y extensibilidad.</p>
           <br>
-          <h3>Key Features</h3>
+          <h3>Características Clave</h3>
           <ul>
-            <li><strong>Multi-Source Ingestion:</strong> Add resumes via local folder batch processing or direct PDF uploads through the web UI.</li>
-            <li><strong>Intelligent Parsing:</strong> Extract markdown from PDFs with automated section detection and bilingual support (English/Spanish).</li>
-            <li><strong>Identity Resolution:</strong> Deterministic and LLM-backed candidate identification to prevent duplicates.</li>
-            <li><strong>Structured Signal Extraction:</strong> Derivation of skills, experience, and education from resumes and job descriptions using LLMs.</li>
-            <li><strong>Hybrid Retrieval & Ranking:</strong> A multi-stage funnel combining vector search (pgvector), deterministic skill matching, and LLM reranking.</li>
-            <li><strong>Evidence-Based Explanations:</strong> Transparent match rationales grounded in resume quotes with explicit gap and risk analysis.</li>
-            <li><strong>Automated Interview Preparation:</strong> Generation of tailored technical and behavioral questions based on candidate-job fit.</li>
-            <li><strong>Async API:</strong> A FastAPI backend with a database-backed task queue for long-running LLM and processing tasks.</li>
+            <li><strong>Ingestión Multi-Fuente:</strong> Agregar currículums vía procesamiento por lotes de carpeta local o cargas directas de PDF a través de la interfaz web.</li>
+            <li><strong>Análisis Inteligente:</strong> Extraer markdown de PDFs con detección automática de secciones y soporte bilingüe (inglés/español).</li>
+            <li><strong>Resolución de Identidad:</strong> Identificación determinista y basada en LLM para prevenir duplicados.</li>
+            <li><strong>Extracción de Señales Estructuradas:</strong> Derivar habilidades, experiencia y educación de currículums y descripciones de puesto usando LLMs.</li>
+            <li><strong>Recuperación Híbrida y Ranking:</strong> Un embudo multi-etapa que combina búsqueda vectorial (pgvector), emparejamiento determinista de habilidades y rerankeado por LLM.</li>
+            <li><strong>Explicaciones Basadas en Evidencia:</strong> Rationales de emparejamiento transparentes fundamentados en citas del currículum con análisis de brechas y riesgos explícitos.</li>
+            <li><strong>Preparación Automatizada de Entrevistas:</strong> Generación de preguntas técnicas y behavioral adaptadas basadas en la compatibilidad candidato-puesto.</li>
+            <li><strong>API Asíncrona:</strong> Un backend FastAPI con una cola de tareas con base de datos para tareas largas de LLM y procesamiento.</li>
           </ul>
         </div>
       </div>
@@ -63,7 +65,7 @@
 
     <section id="stack">
       <div class="container">
-        <h2>Tech Stack</h2>
+        <h2>Tecnologías</h2>
         <div class="stack-badges" style="gap: 10px;">
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">Python</span>
           <span class="stack-badge" style="padding: 5px 12px; font-size: 0.85rem;">LiteLLM</span>
@@ -78,7 +80,7 @@
 
     <section id="gallery">
       <div class="container">
-        <h2>Gallery</h2>
+        <h2>Galería</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
           <div style="border: var(--border); padding: 20px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.9rem;">
               <img src="../assets/thereisnohr1.png" alt="National salary overview" style="width: 100%; height: auto; display: block;">
@@ -96,7 +98,7 @@
 
   <footer>
     <div class="container">
-      <p><a href="../index.html">← Back to Portfolio</a> | <a href="https://github.com/jbeiroa/thereisnohr" target="_blank" rel="noopener">View on GitHub</a></p>
+      <p><a href="../index.html">← Volver al Portafolio</a> | <a href="https://github.com/jbeiroa/thereisnohr" target="_blank" rel="noopener">Ver en GitHub</a></p>
     </div>
   </footer>
 

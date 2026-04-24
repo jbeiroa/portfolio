@@ -73,19 +73,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-nav .logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-nav .logo:hover {
-  color: var(--yellow);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav ul {
   display: flex;
+  align-items: center;
   gap: 20px;
   list-style: none;
 }
@@ -100,6 +94,48 @@ nav ul li a::before {
 
 nav ul li a::after {
   content: ' ]';
+}
+
+nav .menu-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-items li a {
+  font-size: 0.9rem;
+}
+
+.menu-items li a::before {
+  content: '[ ';
+}
+
+.menu-items li a::after {
+  content: ' ]';
+}
+
+.lang-toggle {
+  margin-left: 20px;
+}
+
+.lang-toggle button {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: transparent;
+  color: var(--green);
+  border: 2px solid var(--green);
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.lang-toggle button:hover {
+  color: var(--yellow);
+  border-color: var(--yellow);
+  box-shadow: 4px 4px 0 var(--yellow);
+  transform: translate(-2px, -2px);
 }
 
 .hero {
