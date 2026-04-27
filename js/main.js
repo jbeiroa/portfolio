@@ -730,6 +730,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguageToggle();
   setTimeout(() => refreshTerminal(), 0);
   initBackToTop();
+  initMobileMenu();
   initEasterEgg();
   initLightbox();
 });
@@ -817,6 +818,35 @@ function initBackToTop() {
 
   btn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+function initMobileMenu() {
+  const hamburger = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (!hamburger || !menu) return;
+
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isActive = hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
+    document.body.style.overflow = isActive ? 'hidden' : '';
+  });
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      menu.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (menu.classList.contains('active') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+      hamburger.classList.remove('active');
+      menu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
   });
 }
 
